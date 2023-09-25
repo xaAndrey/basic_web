@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./src/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="./src/mint.png" alt="MINT">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active nav-string" aria-current="page" href="#"
+                            style="font-size: 24px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-string" href="#" style="font-size: 24px;">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 24px;">FAQ</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex btn-search" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row form justify-content-center">
+            <label for="exampleInput1" class="col-2 form-label">Фамилия Имя Отчество</label>
+            <div class="col-5">
+                <input type="fullName" class="form-control" id="exampleInput1" aria-describedby="fullNameHelp">
+            </div>
+        </div>
+
+        <div class="row form justify-content-center">
+            <label for="exampleInput1" class="col-2 form-label">Телефон</label>
+            <div class="col-5">
+                <input type="numberPhone" class="form-control" id="exampleInput1" aria-describedby="numberPhoneHelp">
+            </div>
+        </div>
+
+        <div class="row form justify-content-center">
+            <label for="exampleTextarea1" class="col-2 form-label">Сообщение</label>
+            <div class="col-5">
+                <textarea type="message" class="form-control" id="exampleTextarea1" rows="3"
+                    aria-describedby="messageHelp"></textarea>
+            </div>
+        </div>
+
+        <div class="col justify-content-center form-btn">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+
+        <p class="cp-text" style="padding-top: 2%;"">
+            © Copyright 2023. Pisarev Andrey
+        </p>
+    </div>
+
+    <script src="./src/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
